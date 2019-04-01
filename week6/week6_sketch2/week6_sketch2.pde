@@ -2,6 +2,8 @@
 
 int chapter;
 
+JSONArray values;
+
 String[] descriptions = {
   "There once was an ugly barnacle", 
   "The barnacle sees friends from afar, what do you do?", 
@@ -33,6 +35,29 @@ void setup() {
   for (int i = 0; i < scenes.length; i++) {
     scenes[i] = new Scene(descriptions[i], options[i], optionTargets[i]);
   }
+    values = new JSONArray();
+  for(int i = 0; i < descriptions.length; i++){
+    JSONObject scene = new JSONObject();
+    
+    scene.setString("descriptions", descriptions[i]);
+    
+    JSONArray arr = new JSONArray();
+    for(int j = 0; j < options[i].length; j++){
+      arr.append(options[i][j]);
+    }
+      
+    scene.setJSONArray("options", arr);  
+
+    JSONArray targetArr = new JSONArray();
+    for(int j = 0; j < optionTargets[i].length; j++){
+     targetArr.append(optionTargets[i][j]); 
+    }
+    
+    scene.setJSONArray("option targets", targetArr);
+    
+    values.setJSONObject(i, scene);
+  }
+  saveJSONArray(values, "data/new.json");
 }
 
 void draw() {
