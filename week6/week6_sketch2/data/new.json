@@ -1,0 +1,33 @@
+[
+  {
+    "options": ["follow the barnacle's journey"],
+    "option targets": [1],
+    "descriptions": "There once was an ugly barnacle"
+  },
+  {
+    "options": [
+      "talk to spongebob",
+      "talk to squidward"
+    ],
+    "option targets": [
+      2,
+      3
+    ],
+    "descriptions": "The barnacle sees friends from afar, what do you do?"
+  },
+  {
+    "options": ["go back"],
+    "option targets": [1],
+    "descriptions": "NO! THIS IS PATRICK"
+  },
+  {
+    "options": ["keep going"],
+    "option targets": [4],
+    "descriptions": "Squidward does not want to talk to you"
+  },
+  {
+    "options": ["go home"],
+    "option targets": [0],
+    "descriptions": "The ugly barnacle was so ugly he died. The End."
+  }
+]

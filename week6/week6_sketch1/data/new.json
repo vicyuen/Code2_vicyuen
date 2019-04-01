@@ -1,0 +1,32 @@
+[
+  {
+    "bgColor": -44750,
+    "options": [
+      "try to wake up",
+      "ask a question"
+    ],
+    "option targets": [
+      1,
+      2
+    ],
+    "descriptions": "You wake up in Code 2 class and don't know what is going on"
+  },
+  {
+    "bgColor": -12070556,
+    "options": ["you sleep"],
+    "option targets": [0],
+    "descriptions": "your eyelids feel so heavy, and you fail to wake up"
+  },
+  {
+    "bgColor": -8740097,
+    "options": [
+      "struggle to stay awake",
+      "enjoy the sweet surrender of sleep"
+    ],
+    "option targets": [
+      1,
+      0
+    ],
+    "descriptions": "you feel enlightened by the answer, but still fall asleep"
+  }
+]
