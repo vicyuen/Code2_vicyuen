@@ -33,6 +33,5 @@ void draw() {
     t.update();
     t.display();
 
-    
   }
 }
