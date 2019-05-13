@@ -13,7 +13,8 @@ class Circle {
 
   void display() {
     fill(c);
-    stroke(#f1f1f1);
+    //stroke(#f4f4f4);
+    noStroke();
     ellipse(pos.x, pos.y, size, size);
   }
   
